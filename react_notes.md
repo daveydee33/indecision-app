@@ -298,6 +298,80 @@ But, the difference is in **block level scoping** where a function is defined in
 
 with let and const - if they are defined within an if statement for example, they will _not_ be accessible outside like a var would be.
 
+# Arrow functions
+
+Little bit shorter, but also a lot cleaner for 1 liners.
+
+```javascript
+// old style function
+const square1 = function (x) {
+  return x * x;
+}
+
+// or...
+
+// old style function with a name
+function square2 (x) {
+  return x * x;
+}
+
+
+// arrow functions are always anonymous, so if we want to define it and call it later, we assign it to a variable like:
+// arrow function
+const squareArrow = (x) => {
+  return x * x;
+}
+
+// arrow function 2 - if it's just one line, we don't need the brackets and we don't need the 'return' keyword.  more concise!
+const squareArrow2 = (x) => x * x;
+
+console.log(square1(5));
+console.log(square2(5));
+console.log(squareArrow(8));
+console.log(squareArrow2(8));
+
+
+
+// Challenge - use arrow functions
+
+const fullName = "John Smith";
+
+// const getFirstName = (fullName) => {
+//   return fullName.split(' ')[0];
+// }
+
+// one-liner
+const getFirstName = (fullName) => fullName.split(' ')[0];
+
+
+console.log(`first name of ${fullName} is: ` + getFirstName(fullName));
+```
+
+And part 2:  More on arrow functions, this, and Map function.
+
+**I should review this more somewhere else**
+
+See "ES6 Aside: Arrow Functions Part II
+
+```javascript
+// Challenge
+
+const multiplier = {
+  // numbers - array of numbers
+  // multiplyBy - single number
+  // multiply - return a new array where the numbers have been multiplied
+
+  numbers: [1, 2, 3],
+  multiplyBy: 2,
+
+  multiply() {
+    return this.numbers.map((num) => num * this.multiplyBy);
+  }
+};
+
+console.log(multiplier.multiply()); // [1, 2, 3] 2  [2, 4, 6]
+```
+
 
 
 

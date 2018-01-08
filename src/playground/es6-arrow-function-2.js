@@ -1,12 +1,10 @@
-"use strict";
-
 // arguments object - no longer bound
 
-var add = function add(a, b) {
+const add = function (a, b) {
   // console.log(arguments);
   return a + b;
-};
-console.log(55, 1, 1000); // 56
+}
+console.log(55, 1, 1000);  // 56
 
 // this keyword - no longer bound
 
@@ -24,9 +22,11 @@ console.log(55, 1, 1000); // 56
 // Learn about Map function.
 
 
+
+
 // Challenge
 
-var multiplier = {
+const multiplier = {
   // numbers - array of numbers
   // multiplyBy - single number
   // multiply - return a new array where the numbers have been multiplied
@@ -34,12 +34,8 @@ var multiplier = {
   numbers: [1, 2, 3],
   multiplyBy: 2,
 
-  multiply: function multiply() {
-    var _this = this;
-
-    return this.numbers.map(function (num) {
-      return num * _this.multiplyBy;
-    });
+  multiply() {
+    return this.numbers.map((num) => num * this.multiplyBy);
   }
 };
 
