@@ -1,36 +1,83 @@
-'use strict';
+"use strict";
 
 console.log('app.js is running!');
 
 // JSX - JS XML
+
+// basic template 1
 var template = React.createElement(
-  'div',
+  "div",
   null,
   React.createElement(
-    'h1',
+    "h1",
     null,
-    'Heading'
+    "Heading"
   ),
   React.createElement(
-    'p',
+    "p",
     null,
-    'With some paragraph'
+    "With some paragraph"
   ),
   React.createElement(
-    'ol',
+    "ol",
     null,
     React.createElement(
-      'li',
+      "li",
       null,
-      'One'
+      "One"
     ),
     React.createElement(
-      'li',
+      "li",
       null,
-      'Two'
+      "Two"
+    )
+  )
+);
+
+// basic template 2 - with variables
+var heading = "Something";
+var dude = {
+  name: "Dave",
+  num: 99,
+  city: "Sydney"
+};
+
+var template2 = React.createElement(
+  "div",
+  null,
+  React.createElement(
+    "h1",
+    null,
+    heading
+  ),
+  React.createElement(
+    "p",
+    null,
+    "Details"
+  ),
+  React.createElement(
+    "ol",
+    null,
+    React.createElement(
+      "li",
+      null,
+      "Name: ",
+      dude.name
+    ),
+    React.createElement(
+      "li",
+      null,
+      "Num: ",
+      dude.num
+    ),
+    React.createElement(
+      "li",
+      null,
+      "City: ",
+      dude.city
     )
   )
 );
 var appRoot = document.getElementById('app');
 
-ReactDOM.render(template, appRoot);
+ReactDOM.render(template2, appRoot);
