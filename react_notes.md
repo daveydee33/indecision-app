@@ -351,7 +351,7 @@ And part 2:  More on arrow functions, this, and Map function.
 
 **I should review this more somewhere else**
 
-See "ES6 Aside: Arrow Functions Part II
+See "ES6 Aside: Arrow Functions Part II"
 
 ```javascript
 // Challenge
