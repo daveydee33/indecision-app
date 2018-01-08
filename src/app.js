@@ -1,20 +1,6 @@
 console.log('app.js is running!');
 
-// JSX - JS XML
-
-// basic template 1
-var template = (
-  <div>
-    <h1>Heading</h1>
-    <p>With some paragraph</p>
-    <ol>
-      <li>One</li>
-      <li>Two</li>
-    </ol>
-  </div>
-);
-
-// basic template 2 - with variables
+// basic template 1 - with variables
 var heading = "Something";
 var dude = {
   name: "Dave",
@@ -22,7 +8,7 @@ var dude = {
   city: "Sydney"
 }
 
-var template2 = (
+var template = (
   <div>
     <h1>{heading}</h1>
     <p>Details</p>
@@ -35,4 +21,4 @@ var template2 = (
 );
 var appRoot = document.getElementById('app');
 
-ReactDOM.render(template2, appRoot);
+ReactDOM.render(template, appRoot);

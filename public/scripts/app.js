@@ -2,39 +2,7 @@
 
 console.log('app.js is running!');
 
-// JSX - JS XML
-
-// basic template 1
-var template = React.createElement(
-  "div",
-  null,
-  React.createElement(
-    "h1",
-    null,
-    "Heading"
-  ),
-  React.createElement(
-    "p",
-    null,
-    "With some paragraph"
-  ),
-  React.createElement(
-    "ol",
-    null,
-    React.createElement(
-      "li",
-      null,
-      "One"
-    ),
-    React.createElement(
-      "li",
-      null,
-      "Two"
-    )
-  )
-);
-
-// basic template 2 - with variables
+// basic template 1 - with variables
 var heading = "Something";
 var dude = {
   name: "Dave",
@@ -42,7 +10,7 @@ var dude = {
   city: "Sydney"
 };
 
-var template2 = React.createElement(
+var template = React.createElement(
   "div",
   null,
   React.createElement(
@@ -80,4 +48,4 @@ var template2 = React.createElement(
 );
 var appRoot = document.getElementById('app');
 
-ReactDOM.render(template2, appRoot);
+ReactDOM.render(template, appRoot);
