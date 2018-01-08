@@ -283,3 +283,21 @@ ReactDOM.render(template, appRoot);
 > The **ternary operator (<expression> ? <if true> : <else>)** is great when we want to do one of two things.
 > The **logical and perator (&&)** is great if only want to do something if an expression is true.  (no else needed)
 
+# Using let and const instead of var
+
+* don't use var anymore - use const and let
+* default to using const, use let when we need to.
+
+Const, you can't change a string.  If we need a string to change, we can use let.
+
+Difference is scoping between var and const/let.
+
+But const, let, and var all have **funtion level scoping**.  They are the same there. .  If we define the variable in the function, we can't reference it outside the function.
+
+But, the difference is in **block level scoping** where a function is defined in a block like an if statement for example.  
+
+with let and const - if they are defined within an if statement for example, they will _not_ be accessible outside like a var would be.
+
+
+
+

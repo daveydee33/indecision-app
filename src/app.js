@@ -7,14 +7,14 @@ console.log('app.js is running!');
 // only render subtitle if exists (using logical and operator)
 // render new h3 tag - if options, otherwise "No options") (using ternary operator)
 
-// basic template 1 - with variables
-var app = {
+// basic template 1 - with constiables
+const app = {
   title: 'Indecision App',
   // subtitle: 'Put your life in the hands of a computer',
   options: [],
 }
 
-var user = {
+const user = {
   name: "Dave",
   age: 99,
   location: "Sydney",
@@ -38,7 +38,7 @@ function getLocation2(location) {
   }
 }
 
-var template = (
+const template = (
   <div>
   <h1>{app.title}</h1>
   {app.subtitle && <h3>{app.subtitle}</h3>}
@@ -54,6 +54,6 @@ var template = (
   <p>{user.options ? "Here are your options: " : "No options"}</p>
   </div>
 );
-var appRoot = document.getElementById('app');
+const appRoot = document.getElementById('app');
 
 ReactDOM.render(template, appRoot);

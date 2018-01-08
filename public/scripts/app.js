@@ -9,7 +9,7 @@ console.log('app.js is running!');
 // only render subtitle if exists (using logical and operator)
 // render new h3 tag - if options, otherwise "No options") (using ternary operator)
 
-// basic template 1 - with variables
+// basic template 1 - with constiables
 var app = {
   title: 'Indecision App',
   // subtitle: 'Put your life in the hands of a computer',
